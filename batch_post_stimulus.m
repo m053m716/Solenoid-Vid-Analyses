@@ -1,4 +1,6 @@
 clear; close all force; clc;
+% For just looking at one particular recording (experiment within a
+% session)
 
 %% LOAD DATA
 load('FiltCoeffs.mat','SOS','G');

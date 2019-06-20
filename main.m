@@ -119,7 +119,7 @@ for ii = [1,2,3,4,5,6,7,8]
     [fig{ii},averageCurve{ii}] = sol.PlotCurve(plotArray,10,varNames{ii});
 end
 
-%% Full Function
+%% Full Script
 
 VIDEOFILE = fullfile('K:\Rat\Video\Solenoid Experiments','R19-104_2019_05_31_Site2AB-LSolenoid-1.MP4');
 v = VideoReader(VIDEOFILE);

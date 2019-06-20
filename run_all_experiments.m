@@ -1,5 +1,17 @@
 function run_all_experiments(filenames)
 %% RUN_ALL_EXPERIMENTS  View data for all of a day's recordings
+%
+%   RUN_ALL_EXPERIMENTS(filenames);
+%
+%   --------
+%    INPUTS
+%   --------
+%   filenames   :       Cell array of file names to extract. Each array
+%                           element contains the full char vector to the
+%                           file to extract. Each extracted file is a
+%                           sub-element of one particular experimental
+%                           recording (e.g. for a set of 100 stimuli, there
+%                           should be 100 files).
 
 %% LOAD DATA
 load('FiltCoeffs.mat','SOS','G');

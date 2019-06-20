@@ -1,4 +1,6 @@
 function [data,meta] = read_Intan_RHS2000_file(SOS,G,filename)
+
+
 %% READ_INTAN_RHS2000_FILE 
 %
 % Version 1.0, 30 January 2017
@@ -17,6 +19,10 @@ function [data,meta] = read_Intan_RHS2000_file(SOS,G,filename)
 % >> plot(t, amplifier_data(1,:))
 
 %% PARSE INPUT
+if nargin < 1
+   load('FiltCoeffs.mat'); 
+end
+
 if nargin < 3
    [file, path, ~] = ...
        uigetfile('*.rhs', ...
